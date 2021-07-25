@@ -1,9 +1,10 @@
 :host {
+  padding: 0.5rem;
   display: flex;
   gap: 1rem;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-
+  
   .example-card {
     max-width: 400px;
   }
@@ -15,11 +16,11 @@
 }
 
 :host-context(.row-container) {
-  background-color: paleturquoise;
+  background-color: #0a9396;
   flex-direction: row;
 }
 
 :host-context(.column-container) {
-  background-color: palevioletred;
+  background-color: #ae2012;
   flex-direction: column;
 }
