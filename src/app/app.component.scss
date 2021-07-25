@@ -1,5 +1,16 @@
 :host {
+  display: block;
+  padding: 1rem;
   background-color: #e9d8a6;
+
+  .view-selection {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
   .column {
     transform: rotate(90deg);
   }
@@ -7,5 +18,26 @@
   .selected-value {
     margin: 1rem 0;
     text-transform: capitalize;
+    font-weight: bold;
   }
+
+  // using ng-deep 
+  // .row-container {
+  //   ::ng-deep app-list {
+  //     background-color: #0a9396;
+  //     flex-direction: row;
+
+  //     h3 {
+  //       display: none;
+  //     }
+  //   }
+  // }
+
+  // .column-container {
+  //   ::ng-deep app-list {
+  //     background-color: #ae2012;
+  //     flex-direction: column;
+  //   }
+  // }
+ 
 }
