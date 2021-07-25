@@ -1,0 +1,10 @@
+:host {
+  .column {
+    transform: rotate(90deg);
+  }
+
+  .selected-value {
+    margin: 1rem 0;
+    text-transform: capitalize;
+  }
+}

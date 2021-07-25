@@ -1,0 +1,25 @@
+:host {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+
+  .example-card {
+    max-width: 400px;
+  }
+
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+}
+
+:host-context(.row-container) {
+  background-color: paleturquoise;
+  flex-direction: row;
+}
+
+:host-context(.column-container) {
+  background-color: palevioletred;
+  flex-direction: column;
+}
