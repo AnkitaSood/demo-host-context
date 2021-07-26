@@ -1,0 +1,7 @@
+// BEM naming convention
+// prefix design system name OR any global token to indicate global style override classname
+.unicorn--mat-card-header__long-text {
+  .mat-card-header-text {
+    flex-grow: 2;
+  }
+}

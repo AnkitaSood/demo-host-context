@@ -1,14 +1,13 @@
 <section class="view-selection">
-<span>Current view: {{group.value }}</span>
-
-<mat-button-toggle-group #group="matButtonToggleGroup" value="row-container" >
-  <mat-button-toggle value="row-container" aria-label="Flex direction row">
-    <mat-icon>table_rows</mat-icon>
-  </mat-button-toggle>
-  <mat-button-toggle value="column-container" aria-label="Flex direction column">
-    <mat-icon class="column">table_rows</mat-icon>
-  </mat-button-toggle>
-</mat-button-toggle-group>
+  <mat-button-toggle-group #group="matButtonToggleGroup" value='row-container'>
+    <mat-button-toggle value="row-container" aria-label="Flex direction row" class="toggle-row">
+      <mat-icon>table_rows</mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle value="column-container" aria-label="Flex direction column" class="toggle-column">
+      <mat-icon class="column">table_rows</mat-icon>
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+  <div>Current view: {{group.value}}</div>
 </section>
 
 <div [ngClass]=[group.value]>

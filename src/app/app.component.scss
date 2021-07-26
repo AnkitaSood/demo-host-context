@@ -1,14 +1,15 @@
 :host {
   display: block;
   padding: 1rem;
-  background-color: #e9d8a6;
+  height: 100%;
+  background-color: $chamois;
 
   .view-selection {
     display: flex;
     gap: 1rem;
-    align-items: baseline;
-    justify-content: center;
+    align-items: center;
     margin-bottom: 1rem;
+    flex-direction: column;
   }
 
   .column {
@@ -21,13 +22,13 @@
     font-weight: bold;
   }
 
-  // using ng-deep 
+  // using ng-deep for child components
   // .row-container {
   //   ::ng-deep app-list {
-  //     background-color: #0a9396;
+  //     background-color: $blue-chill;
   //     flex-direction: row;
 
-  //     h3 {
+  //     h2 {
   //       display: none;
   //     }
   //   }
@@ -35,9 +36,17 @@
 
   // .column-container {
   //   ::ng-deep app-list {
-  //     background-color: #ae2012;
+  //     background-color: $tabasco;
   //     flex-direction: column;
   //   }
   // }
- 
+
+  .mat-button-toggle {
+    background-color: $blue-chill;
+  }
+
+  // using ng-deep for material overrides
+  ::ng-deep .toggle-column .mat-button-toggle-label-content {
+    background-color: $tabasco;
+  }
 }
