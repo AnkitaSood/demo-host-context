@@ -24,6 +24,10 @@
     font-weight: bold;
   }
 
+  .row-container {
+    width: fit-content;
+  }
+
   // using ng-deep for child components
   // .row-container {
   //   ::ng-deep app-list {
