@@ -14,8 +14,16 @@
     flex-direction: column;
   }
 
-  .column {
+  .mat-icon.column {
     transform: rotate(90deg);
+  }
+  
+  .toggle-row {
+    background-color: $blue-chill;
+  }
+
+  .toggle-column {
+    background-color: $tabasco;
   }
 
   .selected-value {
@@ -46,13 +54,4 @@
   //     flex-direction: column;
   //   }
   // }
-
-  .mat-button-toggle {
-    background-color: $blue-chill;
-  }
-
-  // using ng-deep for material overrides
-  ::ng-deep .toggle-column .mat-button-toggle-label-content {
-    background-color: $tabasco;
-  }
 }
