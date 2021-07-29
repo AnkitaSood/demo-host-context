@@ -12,6 +12,10 @@
     align-items: center;
     margin-bottom: 1rem;
     flex-direction: column;
+
+    &__value {
+      text-transform: capitalize;
+    }
   }
 
   .mat-icon.column {
