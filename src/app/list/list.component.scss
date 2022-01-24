@@ -27,11 +27,18 @@
   h2 {
     display: none;
   }
+
+  .mat-icon {
+    color: $tabasco;
+  }
 }
 
 :host-context(.column-container) {
   background-color: $tabasco;
   flex-direction: column;
+  .mat-icon {
+    color: $vista-blue;
+  }
 }
 
 // ng-deep for material overrides
