@@ -31,6 +31,11 @@
   .mat-icon {
     color: $tabasco;
   }
+
+  // this is not going to work because ".mat-card-header-text" is not part of the "host". It is encapsulated as the mat-card-header
+  .mat-card-header-text {
+    color: wheat
+  }
 }
 
 :host-context(.column-container) {

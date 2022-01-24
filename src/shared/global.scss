@@ -5,3 +5,8 @@
     flex-grow: 2;
   }
 }
+
+// This will work because these are global styles, and this is how third party component styles should be overriden
+// .row-container .mat-card-header-text {
+//   color: wheat;
+// }
