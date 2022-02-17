@@ -4,30 +4,19 @@
   display: block;
   padding: 1rem;
   height: 100%;
-  background-color: $chamois;
+  min-height: 100vh;
 
-  .view-selection {
+  &.autum {
+    background-color: $chamois;
+  }
+
+  &.pastel {
+    background-color: $girlie;
+  }
+
+  .theme-radio-group {
     display: flex;
-    gap: 1rem;
-    align-items: center;
-    margin-bottom: 1rem;
-    flex-direction: column;
-
-    &__value {
-      text-transform: capitalize;
-    }
-  }
-
-  .mat-icon.column {
-    transform: rotate(90deg);
-  }
-  
-  .toggle-row {
-    background-color: $blue-chill;
-  }
-
-  .toggle-column {
-    background-color: $tabasco;
+    gap: 0.5rem;
   }
 
   .selected-value {
@@ -35,27 +24,4 @@
     text-transform: capitalize;
     font-weight: bold;
   }
-
-  .row-container {
-    width: fit-content;
-  }
-
-  // using ng-deep for child components
-  // .row-container {
-  //   ::ng-deep app-list {
-  //     background-color: $blue-chill;
-  //     flex-direction: row;
-
-  //     h2 {
-  //       display: none;
-  //     }
-  //   }
-  // }
-
-  // .column-container {
-  //   ::ng-deep app-list {
-  //     background-color: $tabasco;
-  //     flex-direction: column;
-  //   }
-  // }
 }

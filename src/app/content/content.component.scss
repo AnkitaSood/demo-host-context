@@ -1,0 +1,64 @@
+@import '../../shared/colors';
+
+:host {
+  display: block;
+
+  .mat-icon.column {
+    transform: rotate(90deg);
+  }
+
+  .view-selection {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-direction: column;
+
+    &__value {
+      text-transform: capitalize;
+    }
+  }
+
+  .row-container {
+    width: fit-content;
+  }
+
+  // using ng-deep for child components
+  // .row-container {
+  //   ::ng-deep app-list {
+  //     background-color: $blue-chill;
+  //     flex-direction: row;
+
+  //     h2 {
+  //       display: none;
+  //     }
+  //   }
+  // }
+
+  // .column-container {
+  //   ::ng-deep app-list {
+  //     background-color: $tabasco;
+  //     flex-direction: column;
+  //   }
+  // }
+}
+
+:host-context(.autum) {
+  .toggle-row {
+    background-color: $blue-chill;
+  }
+
+  .toggle-column {
+    background-color: $tabasco;
+  }
+}
+
+:host-context(.pastel) {
+  .toggle-row {
+    background-color: $lavendar-soap;
+  }
+
+  .toggle-column {
+    background-color: $baby-blue-eyes;
+  }
+}

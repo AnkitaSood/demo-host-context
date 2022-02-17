@@ -17,12 +17,7 @@
   }
 }
 
-.mat-card {
-  background-color: $blue-chill;
-}
-
 :host-context(.row-container) {
-  background-color: $vista-blue;
   flex-direction: row;
   h2 {
     display: none;
@@ -34,12 +29,11 @@
 
   // this is not going to work because ".mat-card-header-text" is not part of the "host". It is encapsulated as the mat-card-header
   .mat-card-header-text {
-    color: wheat
+    color: wheat;
   }
 }
 
 :host-context(.column-container) {
-  background-color: $tabasco;
   flex-direction: column;
   .mat-icon {
     color: $vista-blue;
@@ -50,3 +44,31 @@
 // ::ng-deep .mat-card-header-text {
 //   flex-grow: 2;
 // }
+
+:host-context(.autum) {
+  .mat-card {
+    background-color: $blue-chill;
+  }
+
+  :host-context(.row-container) {
+    background-color: $vista-blue;
+  }
+
+  :host-context(.column-container) {
+    background-color: $tabasco;
+  }
+}
+
+:host-context(.pastel) {
+  .mat-card {
+    background-color: $photon-barrier;
+  }
+
+  :host-context(.row-container) {
+    background-color: $lavendar-soap;
+  }
+
+  :host-context(.column-container) {
+    background-color: $baby-blue-eyes;
+  }
+}

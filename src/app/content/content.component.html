@@ -1,0 +1,23 @@
+<section class="view-selection">
+<mat-button-toggle-group #group="matButtonToggleGroup" value="row-container">
+  <mat-button-toggle
+    value="row-container"
+    aria-label="Flex direction row"
+    class="toggle-row"
+  >
+    <mat-icon>table_rows</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle
+    value="column-container"
+    aria-label="Flex direction column"
+    class="toggle-column"
+  >
+    <mat-icon class="column">table_rows</mat-icon>
+  </mat-button-toggle>
+</mat-button-toggle-group>
+<h3 class="view-selection__value">Current view: {{ group.value }}</h3>
+</section>
+
+<article [ngClass]="[group.value]">
+<app-list></app-list>
+</article>
